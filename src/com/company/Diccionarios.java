@@ -10,6 +10,29 @@ public class Diccionarios {
         rwArray.add("TRISB");
         rwArray.add("DEVICE");
         rwArray.add("Device");
+        rwArray.add("PORTA");
+        rwArray.add("PORTB");
+
+        rwArray.add("PORTA.0");
+        rwArray.add("PORTA.1");
+        rwArray.add("PORTA.2");
+        rwArray.add("PORTA.3");
+        rwArray.add("PORTA.4");
+        rwArray.add("PORTA.5");
+        rwArray.add("PORTA.6");
+        rwArray.add("PORTA.7");
+
+        rwArray.add("PORTB.0");
+        rwArray.add("PORTB.1");
+        rwArray.add("PORTB.2");
+        rwArray.add("PORTB.3");
+        rwArray.add("PORTB.4");
+        rwArray.add("PORTB.5");
+        rwArray.add("PORTB.6");
+        rwArray.add("PORTB.7");
+
+        rwArray.add("inicio:");
+        rwArray.add("GoTo");
 
         return rwArray;
     }
@@ -37,9 +60,14 @@ public class Diccionarios {
         rulesArray.add(" ");
         rulesArray.add("\n");
     //TRISA = 0;
-        rulesArray.add("RW asig num fin ");
+        rulesArray.add("RW asig num ");
     //DEVICE 16F628A;
-        rulesArray.add("RW MC fin ");
+        rulesArray.add("RW MC ");
+    //DEVICE 16F628A;
+        rulesArray.add("RW RW ");
+    //DEVICE 16F628A;
+        rulesArray.add("RW ");
+
         return rulesArray;
     }
 }
