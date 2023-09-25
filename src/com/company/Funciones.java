@@ -135,7 +135,7 @@ public class Funciones {
         }
 
         check.scope(scope);
-        printRWArray(arrayRW);
+       // printRWArray(arrayRW);
         hexa.setHex(arrayRW);
         System.out.println("Analisis terminado");
     }

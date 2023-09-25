@@ -145,12 +145,12 @@ public class Hex {
                 }
                 inicio++;
             }else if(word.word.matches("PORT[AB]\\.?[0-7]?")){
-                if(word.valor==1){
-                    dato="0130";
-                    datos+=dato;
-                    cont+=2;
-                    inicio++;
-                }
+//                if(word.valor==1){
+//                    dato="0130";
+//                    datos+=dato;
+//                    cont+=2;
+//                    inicio++;
+//                }
                 if(esPrimerPort){
                     if(!esPrimerTris){
                         dato="8312";
