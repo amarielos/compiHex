@@ -97,7 +97,7 @@ public class Funciones {
 
     public void setHex(ArrayList<Rw> array){
         boolean esPrimerTris=true,esPrimerPort=true, lineaCompleta=false;
-        int cont=2, cont2=0;
+        int cont=2, cont2=0, inicio=1;
         String datos="",dato,ultLinea="\n"+":02400E00223F4F\n"+":00000001FF";
         String direccion = "0128", hex="",primerlinea="";
 
@@ -132,6 +132,7 @@ public class Funciones {
                     datos+=dato;
                     cont++;
                 }
+                inicio+=2;
             }else if(word.word.matches("PORT[AB]\\.?[0-7]?")){
                 if(esPrimerPort){
                     if(!esPrimerTris){
@@ -171,17 +172,17 @@ public class Funciones {
                     cont++;
                 }
             }else if(word.word.equals("GoTo")){
-                if(word.valor==2){
+                if(word.valor==1){
                     dato="0128";
                     datos+=dato;
                     cont+=2;
                 }
-                if(word.valor==3){
+                if(word.valor==2){
                     dato="0228";
                     datos+=dato;
                     cont+=2;
                 }
-                if(word.valor==4){
+                if(word.valor==3){
                     dato="0328";
                     datos+=dato;
                     cont+=2;
