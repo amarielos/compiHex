@@ -27,6 +27,8 @@ public class Checks {
     public String esNum(String word){
         if (word.matches("^[01]")){
             return "num ";
+        }else if(word.matches("^([2-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])$")){
+            return "time ";
         }
         return null;
     }

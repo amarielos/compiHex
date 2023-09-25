@@ -34,6 +34,8 @@ public class Diccionarios {
         rwArray.add("inicio:");
         rwArray.add("GoTo");
 
+        rwArray.add("DelayMS");
+
         return rwArray;
     }
 
@@ -67,6 +69,8 @@ public class Diccionarios {
         rulesArray.add("RW RW ");
     //DEVICE 16F628A;
         rulesArray.add("RW ");
+    //DelayMS 100;
+        rulesArray.add("RW time ");
 
         return rulesArray;
     }
